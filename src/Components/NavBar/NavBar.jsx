@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../../logo.svg"
+import { NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
 
@@ -19,9 +20,12 @@ const NavBar = () => {
                             <li className="nav-item">
                                 <Link to={'/'} className="nav-link active" aria-current="page">Catálogo</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to={'/'} className="nav-link" aria-current="page">Categorías</Link>
-                            </li>
+
+                            <NavDropdown title="Categorías" id="navbarDropdown">
+                                <NavDropdown.Item as='span'><Link to='/' >Hombre</Link></NavDropdown.Item>
+                                <NavDropdown.Item as='span'><Link to='/' >Accesorios</Link></NavDropdown.Item>
+                                <NavDropdown.Item as='span'><Link to='/' >Electrónica</Link></NavDropdown.Item>
+                            </NavDropdown>
 
 
                             <li className="nav-item">

@@ -6,17 +6,17 @@ const products = [
         description: "Mochila cómoda y moderna, permite transportar tu laptop de 15 pulgadas",
         category: "accesorios",
         image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-        stock: 10
+        stock: 7
     },
 
     {
         id: 2,
-        title: "Remera slimFit New York",
+        title: "Remera NY slimFit",
         price: 4000,
         description: "Estilo slim, 3 botones, cuello tipo V, super cómoda",
         category: "hombre",
         image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-        stock: 50
+        stock: 5
     },
 
     {
@@ -26,7 +26,7 @@ const products = [
         description: "Campera de algodón moderna,para utilizar en múltiples situaciones",
         category: "hombre",
         image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-        stock: 70
+        stock: 7
     },
 
     {
@@ -36,35 +36,35 @@ const products = [
         description: "Estilo slim, mangas largas.Color azúl",
         category: "hombre",
         image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-        stock: 35
+        stock: 4
     },
 
 
     {
         id: 5,
-        title: "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+        title: "Disco rigido externo WD 2TB",
         price: 5000,
         description: "transporta tu información con vos a todo lugar;soporta USB 3.0 and USB 2.0; Compatible con Windows 10, Windows 8.1, Windows 7; ",
         category: "accesorios",
         image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-        stock: 10
+        stock: 2
     },
 
     {
         id: 6,
-        title: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        title: "SanDisk SSD PLUS 1TB SSD",
         price: 4000,
-        description: "Vuelve más rápida tu pc, prende y apaga en segundos. Velocidad de escritura 535MB/s",
+        description: "Vuelve más rápida tu pc, prende y apaga en segundos. Velocidad de escritura 535MB/s.SATA III 6 Gb/s",
         category: "electrónica",
         image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-        stock: 50
+        stock: 6
     },
 
     {
         id: 7,
-        title: "Silicon Power 256GB SSD 3D NAND A55 2.5",
+        title: "Silicon Power 256GB SSD",
         price: 4000,
-        description: "SLC Cache Performance Boost SATA III.",
+        description: "SLC Cache Performance Boost SATA III.3D NAND A55 2.5",
         category: "electrónica",
         image: "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
         stock: 20
@@ -85,7 +85,7 @@ const getList = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(products);
-        }, 2000);
+        }, 1000);
     })
 }
 

@@ -6,7 +6,7 @@
 
 /*Colores*/
 :root {
-  --color-primario: #2f67c9;
+  --color-primario: #61dafb;
   --color-secundario: #76a0e9;
   --color-blanco: #ffffff;
   --color-gris: #7f7f82;
@@ -117,4 +117,32 @@
   border-radius: .5rem;
   border: none;
   text-decoration: none;
+}
+
+/*Titulo*/
+.titleSetup {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+}
+
+.textCenter {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fontSize {
+  font-size: 2rem;
+}
+
+.ItemTitle {
+  font-size: 1.1rem;
+  margin: 0.6rem;
+}
+
+.column {
+  flex-flow: column;
 }

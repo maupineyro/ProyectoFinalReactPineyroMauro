@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import getList from '../../utils/getProducts';
 import ItemList from '../ItemList/ItemList';
+import Title from '../Title/Title';
 
 const ItemListContainer = () => {
     //este componente me tiene que traer los productos
@@ -17,9 +18,14 @@ const ItemListContainer = () => {
     }, [])
 
     return (
-        <div className='listContainer'>
-            <ItemList products={arrayList} />
-        </div>
+        <>
+            <Title />
+            <div className='listContainer'>
+
+                <ItemList products={arrayList} />
+            </div>
+        </>
+
     )
 }
 
