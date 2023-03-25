@@ -4,11 +4,15 @@ import logo from "../../logo.svg"
 const NavBar = () => {
     return (
         <div>
-            <header className="App-header">
+
+
+
+            <header className="navBar">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>
-                    Reactive Shop
+                    REACTIVE
                 </p>
+
 
             </header>
         </div>
