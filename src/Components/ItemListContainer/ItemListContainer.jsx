@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import getList from '../../utils/getProducts';
+import ItemList from '../ItemList/ItemList';
 
 const ItemListContainer = () => {
+    //este componente me tiene que traer los productos
+
+    //seteo el useState con el list array y su modificador
+    const [arrayList, setArrayList] = useState([]);
+
+    //aquí el useEffect
+    useEffect(() => {
+        getList()
+            .then((response) => setArrayList(response))
+            .catch((err) => console.error(err))
+            .finally()
+    }, [])
+
     return (
-        <div>ItemListContainer</div>
+        <div>
+            <ItemList products={arrayList} />
+        </div>
     )
 }
 
