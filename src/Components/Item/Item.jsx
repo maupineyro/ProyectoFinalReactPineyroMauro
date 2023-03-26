@@ -1,9 +1,21 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 
+//agrego el import del context acá
+//import { useContext } from 'react'
+//import { CartContext } from '../../context/CartContext';
+
+
+
+
+//acá no me tengo que olvidar de desestructurar el product en la prop. porque sino llega el objeto pero no lee los datos internos
 const Item = ({ product }) => {
 
-    //acá no me tengo que olvidar de desestructurar el product en la prop. porque sino llega el objeto pero no lee los datos internos
+
+    //   const nombre = useContext(CartContext);
+    //  console.log("item: ", nombre)
+
+
     return (
         <div className='item border border-2 border-info'>
             <img src={product.image} alt='producto' />

@@ -32,7 +32,7 @@ const products = [
         id: 3,
         title: "Campera Joel",
         price: 15000,
-        description: "Campera de algodón moderna,para utilizar en múltiples situaciones",
+        description: "Campera de algodón moderna, para utilizar en múltiples situaciones",
         category: "hombre",
         image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
         stock: 7
@@ -42,7 +42,7 @@ const products = [
         id: 4,
         title: "Remera 2do Francia",
         price: 4000,
-        description: "Estilo slim, mangas largas.Color azúl",
+        description: "Estilo slim, mangas largas. Color azúl",
         category: "hombre",
         image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
         stock: 4
@@ -53,7 +53,7 @@ const products = [
         id: 5,
         title: "Disco rigido externo WD 2TB",
         price: 5000,
-        description: "tu información siempre con vos;soporta USB 3.0 and USB 2.0; Compatible con Windows 10, Windows 8.1, Windows 7; ",
+        description: "Tu información siempre con vos. Soporta USB 3.0 and USB 2.0. Compatible con Windows 10, Windows 8.1, Windows 7;",
         category: "accesorios",
         image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
         stock: 2
