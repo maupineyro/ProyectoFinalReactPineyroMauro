@@ -53,7 +53,7 @@ const products = [
         id: 5,
         title: "Disco rigido externo WD 2TB",
         price: 5000,
-        description: "transporta tu información con vos a todo lugar;soporta USB 3.0 and USB 2.0; Compatible con Windows 10, Windows 8.1, Windows 7; ",
+        description: "tu información siempre con vos;soporta USB 3.0 and USB 2.0; Compatible con Windows 10, Windows 8.1, Windows 7; ",
         category: "accesorios",
         image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
         stock: 2

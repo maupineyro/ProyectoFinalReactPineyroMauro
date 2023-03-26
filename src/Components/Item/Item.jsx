@@ -10,7 +10,7 @@ const Item = ({ product }) => {
             <div className='textCenter column'>
                 <h3 className='textCenter ItemTitle'>{product.title}</h3>
                 <p>Precio: ${product.price}</p>
-                <Link className='button' to={`/item/${product.id}`}>Ver detalles</Link>
+                <Link className='button' to={`/itemdetail/${product.id}`}>Ver detalles</Link>
             </div>
         </div>
     )
