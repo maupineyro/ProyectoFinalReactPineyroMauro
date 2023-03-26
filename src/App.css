@@ -121,7 +121,7 @@
 
 /*Titulo*/
 .titleSetup {
-  background-color: #282c34;
+  background-color: #585c67;
   color: white;
   display: flex;
 }
@@ -145,4 +145,46 @@
 
 .column {
   flex-flow: column;
+}
+
+.counter {
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  background-color: #0a0000;
+  color: #ffffff;
+  border-radius: .7rem;
+}
+
+.itemCountbutton {
+  background-color: #282c34;
+  color: #61dafb;
+  width: 1.6rem;
+  align-self: center;
+  padding: .25rem;
+  margin: .5rem;
+  border-radius: .5rem;
+  border: none;
+  text-decoration: none;
+}
+
+
+/*card de detalle*/
+
+.itemDetail {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 18rem;
+  margin: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.itemDetail img {
+  object-fit: contain;
+  height: 400px;
+  width: 250px;
 }

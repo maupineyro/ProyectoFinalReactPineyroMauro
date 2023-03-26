@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
+import ItemCount from './Components/ItemCount/ItemCount';
 
 
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<ItemListContainer />} />
           <Route path='/item' element={<ItemDetailContainer />} />
         </Routes>
+        <ItemDetailContainer />
       </BrowserRouter>
     </div>
   );
