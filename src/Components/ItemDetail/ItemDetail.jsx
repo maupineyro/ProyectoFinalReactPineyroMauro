@@ -8,27 +8,14 @@ const ItemDetail = ({ data }) => {
             </div>
             <div className='textCenter'>
                 <div className='itemDetail border border-2 border-info textCenter'>
-                    <div>
-                        <img src={data.image} alt={data.title} width='500px' />
-                    </div>
-                    <div>
-                        <h3>{data.title}</h3>
-                        <p>Categoría:{data.category}</p>
-                        <p>Precio <b>${data.price}</b></p>
-                        <p>Descripción: {data.description}</p>
-                        <p>stock: {data.stock}</p>
+                    <img src={data.image} alt={data.title} />
+                    <h3>{data.title}</h3>
 
-                    </div>
+                    <p className='textCenter'> {data.description}</p>
+                    <p>stock: {data.stock}</p>
+                    <p>Precio <b>${data.price}</b></p>
+
                 </div>
-
-
-
-
-
-
-
-
-
 
             </div>
         </>
