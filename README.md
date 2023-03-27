@@ -17,3 +17,8 @@ En la segunda entrega, creamos varios componentes, algunos contenedores de lógi
 
 La entrega final se apoya en la 2da entrega, pero agrega el useContext, un hook que se utiliza para compartir información entre componentes que no son padre- hijo. Esto es útil especialmente para darle funcionalidad al carrito de compras.
 Además vimos en clase como crear una base de datos en Firebase, para llamar los productos. 
+
+
+# Preview de la navegabilidad:
+
+https://youtu.be/ZH9bkzl2-uQ
