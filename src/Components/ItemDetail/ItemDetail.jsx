@@ -38,7 +38,7 @@ const ItemDetail = ({ data }) => {
                     <p>stock: {data.stock}</p>
                     <p>Precio <b>${data.price}</b></p>
                     {
-                        goToCart ? <Link to='/cart'>Ir al Carrito para continuar compra</Link> : <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
+                        goToCart ? <div className='textCenter flexCol' ><Link className='p-3 textCenter counter my-3' to='/cart'>Ir al Carrito </Link> <Link className='p-3 textCenter counter my-1' to='/'>Continuar comprando</Link></div> : <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
                     }
 
                 </div>
