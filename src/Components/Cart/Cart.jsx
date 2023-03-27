@@ -17,7 +17,10 @@ const Cart = () => {
                     <Button className='button ' variant="outline-dark"> <Link className='text-info' to="/" >Ver Catálogo</Link>
 
                     </Button></div> :
-                <div> {cart.map(product => <ItemCart key={product.id} product={product} />)} </div>}
+                <div>
+                    {cart.map(product => <ItemCart key={product.id} product={product} />)} ;
+                    <h4 className='textCenter flexCol mb-5'>Total: $ {totalPrice()} </h4>
+                </div>}
         </div>
     )
 }
