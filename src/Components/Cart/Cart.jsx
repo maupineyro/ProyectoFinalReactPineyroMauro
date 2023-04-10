@@ -32,7 +32,7 @@ const Cart = () => {
     }
     console.log(order);
 
-    //la función que manda a firebase las orders
+    //la función handleClick, que manda a firebase las orders
 
     const handleClick = (e) => {
         e.preventDefault();
