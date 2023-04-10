@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext'
@@ -7,6 +8,8 @@ import ItemCart from '../ItemCart/ItemCart';
 const Cart = () => {
 
     const { cart, totalPrice } = useCartContext();
+    //firebase
+
 
     //emitir compra y formulario
 
@@ -15,7 +18,7 @@ const Cart = () => {
     const [buyerEmail, setBuyerEmail] = useState('')
     const [buyerPhone, setBuyerPhone] = useState('')
 
-    //crear la constante order
+    //crear la constante order como un objeto
 
     const order = {
         buyer: {
@@ -28,6 +31,18 @@ const Cart = () => {
         total: totalPrice()
     }
     console.log(order);
+
+    //la función que manda a firebase las orders
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        const db = getFirestore();
+        const ordersCollection = collection(db, "orders");
+        addDoc(ordersCollection, order)
+            .then(({ id }) => console.log(id));
+
+
+    }
 
     return (
         <div>
@@ -56,7 +71,7 @@ const Cart = () => {
                                 <input required type="email" value={buyerEmail} onChange={(e) => setBuyerEmail(e.target.value)} />
                             </label>
 
-                            <button className='button mt-5' type="submit">Emitir compra</button>
+                            <button className='button mt-5' type="submit" onClick={handleClick} >Emitir compra</button>
 
                         </form>
                     </div>
