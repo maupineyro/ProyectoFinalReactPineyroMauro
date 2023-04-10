@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext'
@@ -8,6 +8,26 @@ const Cart = () => {
 
     const { cart, totalPrice } = useCartContext();
 
+    //emitir compra y formulario
+
+    //states para guardar datos del form
+    const [buyerName, setBuyerName] = useState('')
+    const [buyerEmail, setBuyerEmail] = useState('')
+    const [buyerPhone, setBuyerPhone] = useState('')
+
+    //crear la constante order
+
+    const order = {
+        buyer: {
+            name: buyerName,
+
+            email: buyerEmail,
+            phone: buyerPhone
+        },
+        items: cart,
+        total: totalPrice()
+    }
+    console.log(order);
 
     return (
         <div>
@@ -17,10 +37,45 @@ const Cart = () => {
                     <Button className='button ' variant="outline-dark"> <Link className='text-info' to="/" >Ver Catálogo</Link>
 
                     </Button></div> :
-                <div>
-                    {cart.map(product => <ItemCart key={product.id} product={product} />)} ;
+                <div className='flexCol textCenter'>
+                    {cart.map(product => <ItemCart key={product.id} product={product} />)}
                     <h4 className='textCenter flexCol mb-5'>Total: $ {totalPrice()} </h4>
+
+                    <div className='ordenFormContainer'>
+                        <form className='flexCol p-2' >
+                            <label className='p-2'>
+                                Nombre:<br />
+                                <input required type="text" value={buyerName} onChange={(e) => setBuyerName(e.target.value)} />
+                            </label>
+                            <label className='p-2' >
+                                Teléfono:<br />
+                                <input required type="text" value={buyerPhone} onChange={(e) => setBuyerPhone(e.target.value)} />
+                            </label>
+                            <label className='p-2' >
+                                Email:<br />
+                                <input required type="email" value={buyerEmail} onChange={(e) => setBuyerEmail(e.target.value)} />
+                            </label>
+
+                            <button className='button mt-5' type="submit">Emitir compra</button>
+
+                        </form>
+                    </div>
+
+
+
+
+
+
+
+
+
+
                 </div>}
+
+
+
+
+
         </div>
     )
 }

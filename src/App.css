@@ -229,3 +229,13 @@ a {
   margin: 1rem;
   object-fit: contain;
 }
+
+.ordenFormContainer {
+  display: flex;
+
+  justify-content: center;
+  width: 400px;
+  border: 4px outset #61dafb;
+  border-radius: 10px;
+  height: 320px;
+}
